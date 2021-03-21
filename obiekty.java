@@ -18,12 +18,12 @@ public class obiekty extends JFrame {
 
   public obiekty() {
     add("Center", new MyCanvas());
-    shapes[0] = new Line2D.Double(0.0, 0.0, 100.0, 100.0); // rysuje linie
-    shapes[1] = new Rectangle2D.Double(50.0, 200.0, 200.0, 200.0); // rysuje kwadrat
-    shapes[2] = new Ellipse2D.Double(20.0, 420.0, 300.0, 300.0); // rysuje koło
+    shapes[0] = new Line2D.Double(0.0, 0.0, 100.0, 100.0); // rysuje linie w podanym rozmiarze i umiejscowieniu
+    shapes[1] = new Rectangle2D.Double(50.0, 200.0, 200.0, 200.0); // rysuje kwadrat w podanym rozmiarze i umiejscowieniu
+    shapes[2] = new Ellipse2D.Double(20.0, 420.0, 300.0, 300.0); // rysuje koło w podanym rozmiarze i umiejscowieniu
     GeneralPath path = new GeneralPath(new Line2D.Double(300.0, 100.0, 400.0, 150.0));
     path.append(new Line2D.Double(25.0, 175.0, 300.0, 100.0), true);
-    shapes[3] = path; // rysuje trojkat
+    shapes[3] = path; // rysuje trojkat w podanym rozmiarze i umiejscowieniu
     setSize(400, 400);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setVisible(true);
